@@ -15,8 +15,10 @@ const renderusers=users.map((user)=>{
         <th>Name</th>
         <th>Email</th>
         </tr>
-        {renderusers}
-     </thead></table>
+     </thead>
+     <tbody data-testid="users"> {renderusers}</tbody>
+    
+     </table>
     </>
 }
 export default UserList;
