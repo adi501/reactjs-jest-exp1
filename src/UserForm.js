@@ -8,7 +8,11 @@ function UserForm({onUserAdd}){
     const handleSubmit=(e)=>{
      e.preventDefault();
      onUserAdd({name,email});
-    // console.log(name,email);
+// console.log(name,email);
+     // clear the textbox
+     setName('');
+     setEmail('');
+    
     };
 
     return <form onSubmit={handleSubmit}>
